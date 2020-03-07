@@ -4,17 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>xhBalck Festival</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> 
     <style>
       * {
         margin: 0px;
@@ -27,19 +17,59 @@
         background: rgb(17, 17, 17);
         width: 100vw;
         max-width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
-        align-items: center;
+        position: relative;
+      }
+      .line-1{
+          height: 100%;
+          width: 1px;
+          background: yellow;
+          position: absolute;
+          left: 20px;
+          top: 0px;
+      }
+      .line-2{
+          height: 100%;
+          width: 1px;
+          background: yellow;
+          position: absolute;
+          right: 20px;
+          top: 0px;
+      }
+
+      .line-about{
+          height: 1px;
+          width: 100%;
+          background: yellow;
+          position: absolute;
+          top: 20px;
+          left: 0px;
       }
 
       .title,
       .lineup,
-      .ticket {
+      .ticket, .about {
         text-align: center;
+        min-height: 99vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
       }
       .title h1 {
         font-size: 4.9em;
+        font-weight: 700;
+      }
+      .title img{
+          width: 500px;
+          height: auto;
+          margin: 0 auto;
+      }
+      .title h4{
+          font-size: 1.2em;
       }
       h4,
       h5 {
@@ -47,7 +77,7 @@
       }
 
       .lineup,
-      .ticket {
+      .ticket, .about {
         margin-top: 50px;
       }
       h3 {
@@ -58,27 +88,109 @@
       .ticket h3 {
         color: white;
       }
+      .scroll{
+          position: absolute;
+          bottom: 20px;
+          left: 0px;
+          right: 0px;
+            color: white;
+      }
+      .artists{
+          display: flex;
+          justify-content: center;
+      }
+      .artists h3{
+          padding: 10px 40px;
+          font-size: 2em;
+      }
+
+      .about h2{
+          font-size: 2em;
+      }
+      .about .text {
+          width: 70%;
+          margin: 0 auto;
+          margin-top: 40px;
+
+      }
+      .about .text p{
+          color: white;
+          margin-bottom: 15px;
+      }
+
+      footer{
+          background: yellow;
+          width: 100%;
+          height:40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          overflow: hidden;
+      }
+
+      footer p{
+          color: black;
+      }
+
+      .line-footer-1{
+        height: 100%;
+          width: 1px;
+          background: black;
+          position: absolute;
+          left: 20px;
+          top: 0px;
+      }
+      .line-footer-2{
+        height: 100%;
+          width: 1px;
+          background: black;
+          position: absolute;
+          right: 20px;
+          top: 0px;
+      }
     </style>
   </head>
   <body>
     <main>
+        <div class="line-1"></div>
+        <div class="line-2"></div>
       <div class="title">
-        <h1>xhBalck</h1>
-        <h4>Festival</h4>
-        <h4>Copenhagen</h4>
-        <h4>09.10.2020</h4>
+        <img src="weblogo-title.png" alt="">
+        <h4 style="margin-bottom: 20px;">Festival</h4>
+        <h4 style="margin-bottom: 0px;">Copenhagen</h4>
+        <h4>09.10.2020 - 10.10.2020</h4>
+        <p class="scroll">Scroll for more</p>
       </div>
 
       <div class="lineup">
-        <h3>The Weeknd</h3>
-        <h3>Post Malone</h3>
-        <h3>Miley Cyrus</h3>
+          <div class="artists">
+            <h3>The Weeknd</h3>
+            <h3>Post Malone</h3>
+            <h3>Miley Cyrus</h3>
+          </div>
+       
         <h5>More artists and info to come...</h5>
       </div>
       <div class="ticket">
         <h4>Ticket sale starts:<h4/>
-        <h3>12:00 - 09.04.2020</h3>
+        <h3>12:00 - 01.04.2020</h3>
       </div>
+      <div class="about">
+          <div class="line-about"></div>
+        <h2>About</h2>
+        <div class="text">
+            <p>xhBalck is a movement born in 2012 in Copenhagen with the focus on life, fun and freedom.</p>
+            <p>The festival has had its debut in 2016 and has been growing since ever every year. This year, however, is a special one. Thanks to some very kind sponsors and partners, we are able to jump to a new era of xhBalck festival with a massively new budget.</p>    
+            <a href="https://instagram.com/xhbalck">Follow us on instagram</a>
+        </div>
+      </div>
+    <footer>
+        <div class="line-footer-1"></div>
+        <div class="line-footer-2"></div>
+         <p>© xhBalck 2020. All rights reserved.</p>
+    </footer>
+
     </main>
     <script>
         const _0x18aa=['cXVlcnlTZWxlY3Rvcg==','LnRpY2tldA==','PGgzPlNPTEQgT1VUPC9oMz4=','aW5uZXJIVE1M','bm93'];(function(_0x31a34e,_0x18aaca){const _0x5be699=function(_0x1b6632){while(--_0x1b6632){_0x31a34e['push'](_0x31a34e['shift']());}};_0x5be699(++_0x18aaca);}(_0x18aa,0x134));const _0x5be6=function(_0x31a34e,_0x18aaca){_0x31a34e=_0x31a34e-0x0;let _0x5be699=_0x18aa[_0x31a34e];if(_0x5be6['pEGMVT']===undefined){(function(){const _0x4271a7=function(){let _0x313fb8;try{_0x313fb8=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x59365d){_0x313fb8=window;}return _0x313fb8;};const _0x37f5e4=_0x4271a7();const _0x22930c='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x37f5e4['atob']||(_0x37f5e4['atob']=function(_0x316674){const _0x2b1bb0=String(_0x316674)['replace'](/=+$/,'');let _0x257628='';for(let _0x34d1b4=0x0,_0x56fb0e,_0x1ba3d2,_0x375d38=0x0;_0x1ba3d2=_0x2b1bb0['charAt'](_0x375d38++);~_0x1ba3d2&&(_0x56fb0e=_0x34d1b4%0x4?_0x56fb0e*0x40+_0x1ba3d2:_0x1ba3d2,_0x34d1b4++%0x4)?_0x257628+=String['fromCharCode'](0xff&_0x56fb0e>>(-0x2*_0x34d1b4&0x6)):0x0){_0x1ba3d2=_0x22930c['indexOf'](_0x1ba3d2);}return _0x257628;});}());_0x5be6['WtYaPi']=function(_0x3b66d8){const _0x46e5de=atob(_0x3b66d8);let _0x57aab9=[];for(let _0x52b4f8=0x0,_0x589eab=_0x46e5de['length'];_0x52b4f8<_0x589eab;_0x52b4f8++){_0x57aab9+='%'+('00'+_0x46e5de['charCodeAt'](_0x52b4f8)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x57aab9);};_0x5be6['SfDxWE']={};_0x5be6['pEGMVT']=!![];}const _0x1b6632=_0x5be6['SfDxWE'][_0x31a34e];if(_0x1b6632===undefined){_0x5be699=_0x5be6['WtYaPi'](_0x5be699);_0x5be6['SfDxWE'][_0x31a34e]=_0x5be699;}else{_0x5be699=_0x1b6632;}return _0x5be699;};let today=Date[_0x5be6('0x1')]();if(today>0x171352eed00){document[_0x5be6('0x2')](_0x5be6('0x3'))[_0x5be6('0x0')]=_0x5be6('0x4');}
