@@ -90,6 +90,14 @@
       .title h4{
           font-size: 1.2em;
       }
+      .title .festival{
+        margin-bottom: 60px;
+        font-weight: 200;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 40px;
+        text-align: center;
+      }
       h4,
       h5 {
         color: white;
@@ -114,6 +122,8 @@
         font-size: 2em;
           margin-bottom: 50px;
           text-transform: uppercase;
+          font-size: 5em;
+          letter-spacing: 10px;
       }
       .map img{
         width: 90%;
@@ -133,8 +143,19 @@
       }
       .artists{
           display: flex;
-          justify-content: center;
+          /* justify-content: center; */
+          align-items: center;
+          flex-direction: column;
       }
+
+      .artists .sub-art{
+          display: flex;
+      }
+
+      .artists .sub-art h4{
+          padding: 5px 10px;
+      }
+
       .artists h3{
           padding: 10px 40px;
           font-size: 2em;
@@ -144,6 +165,8 @@
         font-size: 2em;
           margin-bottom: 50px;
           text-transform: uppercase;
+          font-size: 5em;
+          letter-spacing: 10px;
       }
       .about .text {
           width: 70%;
@@ -204,18 +227,25 @@
         <div class="line-2"></div>
       <div class="title">
         <img src="weblogo-title.png" alt="">
-        <h4 style="margin-bottom: 20px;">Festival</h4>
+        <h4 class="festival">Festival</h4>
         <h4 style="margin-bottom: 0px;">Copenhagen</h4>
         <h4>09.05.2020 - 10.05.2020</h4>
-        <p class="scroll">Scroll for more</p>
+        <p class="scroll">Pil ned her</p>
       </div>
 
       <div class="lineup">
         <h2>Acts</h2>
           <div class="artists">
-            <h3>The Weeknd</h3>
-            <h3>Post Malone</h3>
-            <h3>Miley Cyrus</h3>
+            <h3>POST MALONE (US)</h3>
+            <div class="sub-art">
+              <h4>MØME (FR)</h4>
+              <h4>RAFN (DK)</h4>
+              <h4>YUNG LEAN (SE)</h4>
+              <h4>BREMER/MCCOY (DK)</h4>
+              <h4>AV AV AV (DK)</h4>
+              <h4>CANNES (FR)</h4>
+            </div>
+            
           </div>
        
         <h5>More artists and info to come...</h5>
@@ -227,7 +257,6 @@
       <div class="ticket">
         <h4>Ticket sale starts:<h4/>
         <h3>09.04.2020 - 12:00</h3>
-        <p style="color: white; font-size: .8em; margin-top: 0px;">Expected price: below 700 dkk</p>
       </div>
       <div class="about">
           <div class="line-about"></div>
