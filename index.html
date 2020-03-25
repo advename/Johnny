@@ -1,282 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>xhBalck Festival</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 
-    <!-- COMMON TAGS -->
-    <meta charset="utf-8">
-    <title>xhBalck Festival</title>
-    <!-- Search Engine -->
-    <meta name="description" content="A revived festival in Copenhagen, Denmark. 2 days with very promising acts and specials.">
-    <meta name="image" content="https://xhbalck.vision/weblogo-title.png">
-    <!-- Schema.org for Google -->
-    <meta itemprop="name" content="xhBalck Festival">
-    <meta itemprop="description" content="A revived festival in Copenhagen, Denmark. 2 days with very promising acts and specials.">
-    <meta itemprop="image" content="https://xhbalck.vision/weblogo-title.png">
-    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta name="og:title" content="xhBalck Festival">
-    <meta name="og:description" content="A revived festival in Copenhagen, Denmark. 2 days with very promising acts and specials.">
-    <meta name="og:image" content="https://xhbalck.vision/weblogo-title.png">
-    <meta name="og:url" content="https://xhbalck.vision/">
-    <meta name="og:site_name" content="xhBalck Festival">
-    <meta name="og:type" content="website">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>xhBalck Festival</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 
-    <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        font-family: "Roboto", sans-serif;
-        color: #ffff00;
-      }
-      body {
-        background: #080808;
-        width: 100vw;
-        max-width: 100%;
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        position: relative;
-      }
-      .line-1{
-          height: 100%;
-          width: 1px;
-          background: yellow;
-          position: absolute;
-          left: 20px;
-          top: 0px;
-      }
-      .line-2{
-          height: 100%;
-          width: 1px;
-          background: yellow;
-          position: absolute;
-          right: 20px;
-          top: 0px;
+  <!-- COMMON TAGS -->
+  <meta charset="utf-8">
+  <title>xhBalck Festival</title>
+  <!-- Search Engine -->
+  <meta name="description"
+    content="A revived festival in Copenhagen, Denmark. 2 days with very promising acts and specials.">
+  <meta name="image" content="https://xhbalck.vision/weblogo-title.png">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="xhBalck Festival">
+  <meta itemprop="description"
+    content="A revived festival in Copenhagen, Denmark. 2 days with very promising acts and specials.">
+  <meta itemprop="image" content="https://xhbalck.vision/weblogo-title.png">
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta name="og:title" content="xhBalck Festival">
+  <meta name="og:description"
+    content="A revived festival in Copenhagen, Denmark. 2 days with very promising acts and specials.">
+  <meta name="og:image" content="https://xhbalck.vision/weblogo-title.png">
+  <meta name="og:url" content="https://xhbalck.vision/">
+  <meta name="og:site_name" content="xhBalck Festival">
+  <meta name="og:type" content="website">
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+      color: #ffff00;
+    }
+
+    body {
+      background: #080808;
+      width: 100vw;
+      max-width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    .line-1 {
+      height: 100%;
+      width: 1px;
+      background: yellow;
+      position: absolute;
+      left: 20px;
+      top: 0px;
+      z-index: 20;
+    }
+
+    .line-2 {
+      height: 100%;
+      width: 1px;
+      background: yellow;
+      position: absolute;
+      right: 20px;
+      top: 0px;
+      z-index: 20;
+    }
+
+    .line-about {
+      height: 1px;
+      width: 100%;
+      background: yellow;
+      position: absolute;
+      top: 20px;
+      left: 0px;
+    }
+
+    .title,
+    .lineup,
+    .ticket,
+    .about,
+    .map {
+      text-align: center;
+      min-height: 99vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .title h1 {
+      font-size: 4.9em;
+      font-weight: 700;
+    }
+
+    .title img {
+      width: 500px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .title h4 {
+      font-size: 1.2em;
+    }
+
+    .title .festival {
+      margin-bottom: 60px;
+      font-weight: 200;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 40px;
+      text-align: center;
+    }
+
+    .title .scroll {
+      transform: scale(3, 1.5);
+    }
+
+    h4,
+    h5 {
+      color: white;
+    }
+
+    .lineup,
+    .ticket,
+    .about {
+      margin-top: 50px;
+    }
+
+    h3 {
+      font-size: 1.7em;
+      margin-bottom: 0.3em;
+    }
+
+    .lineup h2 {
+      font-size: 2em;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+    }
+
+    .map h2 {
+      font-size: 2em;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+      font-size: 5em;
+      letter-spacing: 10px;
+    }
+
+    .map img {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .ticket h3 {
+      color: white;
+    }
+
+    .scroll {
+      position: absolute;
+      bottom: 20px;
+      left: 0px;
+      right: 0px;
+      color: white;
+    }
+
+    .artists {
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .artists .sub-art {
+      display: flex;
+    }
+
+    .artists .sub-art h4 {
+      padding: 5px 10px;
+    }
+
+    .artists h3 {
+      padding: 10px 40px;
+      font-size: 2em;
+    }
+
+    .about h2 {
+      font-size: 2em;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+      font-size: 5em;
+      letter-spacing: 10px;
+    }
+
+    .about .text {
+      width: 70%;
+      margin: 0 auto;
+
+    }
+
+    .about .text p {
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: yellow;
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    footer p {
+      color: black;
+    }
+
+    .line-footer-1 {
+      height: 100%;
+      width: 1px;
+      background: black;
+      position: absolute;
+      left: 20px;
+      top: 0px;
+    }
+
+    .line-footer-2 {
+      height: 100%;
+      width: 1px;
+      background: black;
+      position: absolute;
+      right: 20px;
+      top: 0px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .title img {
+        width: 80vw;
       }
 
-      .line-about{
-          height: 1px;
-          width: 100%;
-          background: yellow;
-          position: absolute;
-          top: 20px;
-          left: 0px;
-      }
-
-      .title,
-      .lineup,
-      .ticket, .about, .map {
-        text-align: center;
-        min-height: 99vh;
-        display: flex;
-        justify-content: center;
+      .artists {
         flex-direction: column;
-        position: relative;
-        overflow: hidden;
       }
-      .title h1 {
-        font-size: 4.9em;
-        font-weight: 700;
-      }
-      .title img{
-          width: 500px;
-          height: auto;
-          margin: 0 auto;
-      }
-      .title h4{
-          font-size: 1.2em;
-      }
-      .title .festival{
+
+      .title .festival {
         margin-bottom: 60px;
         font-weight: 200;
-        font-size: 2em;
+        font-size: 20px;
         text-transform: uppercase;
-        letter-spacing: 40px;
+        letter-spacing: 18px;
         text-align: center;
       }
-      h4,
-      h5 {
-        color: white;
+
+      .artists .sub-art {
+        display: flex;
+        flex-direction: column;
       }
 
-      .lineup,
-      .ticket, .about {
-        margin-top: 50px;
+      .about h2 {
+        font-size: 50px;
       }
-      h3 {
-        font-size: 1.7em;
-        margin-bottom: 0.3em;
-      }
+    }
+  </style>
+</head>
 
-      .lineup h2{
-          font-size: 2em;
-          margin-bottom: 50px;
-          text-transform: uppercase;
-      }
+<body>
+  <main>
+    <div class="line-1"></div>
+    <div class="line-2"></div>
+    <div class="title">
+      <img src="weblogo-title.png" alt="">
+      <h4 class="festival">Festival</h4>
+      <h4 style="margin-bottom: 0px;">Copenhagen</h4>
+      <h4>09.05.2020 - 10.05.2020</h4>
+      <p class="scroll">&#709;</p>
+    </div>
 
-      .map h2{
-        font-size: 2em;
-          margin-bottom: 50px;
-          text-transform: uppercase;
-          font-size: 5em;
-          letter-spacing: 10px;
-      }
-      .map img{
-        width: 90%;
-        height: auto;
-        margin: 0 auto;
-      }
-
-      .ticket h3 {
-        color: white;
-      }
-      .scroll{
-          position: absolute;
-          bottom: 20px;
-          left: 0px;
-          right: 0px;
-            color: white;
-      }
-      .artists{
-          display: flex;
-          /* justify-content: center; */
-          align-items: center;
-          flex-direction: column;
-      }
-
-      .artists .sub-art{
-          display: flex;
-      }
-
-      .artists .sub-art h4{
-          padding: 5px 10px;
-      }
-
-      .artists h3{
-          padding: 10px 40px;
-          font-size: 2em;
-      }
-
-      .about h2{
-        font-size: 2em;
-          margin-bottom: 50px;
-          text-transform: uppercase;
-          font-size: 5em;
-          letter-spacing: 10px;
-      }
-      .about .text {
-          width: 70%;
-          margin: 0 auto;
-
-      }
-      .about .text p{
-          color: white;
-          margin-bottom: 15px;
-      }
-
-      footer{
-          background: yellow;
-          width: 100%;
-          height:40px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          overflow: hidden;
-      }
-
-      footer p{
-          color: black;
-      }
-
-      .line-footer-1{
-        height: 100%;
-          width: 1px;
-          background: black;
-          position: absolute;
-          left: 20px;
-          top: 0px;
-      }
-      .line-footer-2{
-        height: 100%;
-          width: 1px;
-          background: black;
-          position: absolute;
-          right: 20px;
-          top: 0px;
-      }
-
-      @media only screen and (max-width: 600px) {
-          .title img{
-            width: 80vw;
-          }
-
-          .artists{
-            flex-direction: column;
-          }
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-        <div class="line-1"></div>
-        <div class="line-2"></div>
-      <div class="title">
-        <img src="weblogo-title.png" alt="">
-        <h4 class="festival">Festival</h4>
-        <h4 style="margin-bottom: 0px;">Copenhagen</h4>
-        <h4>09.05.2020 - 10.05.2020</h4>
-        <p class="scroll">Pil ned her</p>
-      </div>
-
-      <div class="lineup">
-        <h2>Acts</h2>
-          <div class="artists">
-            <h3>POST MALONE (US)</h3>
-            <div class="sub-art">
-              <h4>MØME (FR)</h4>
-              <h4>RAFN (DK)</h4>
-              <h4>YUNG LEAN (SE)</h4>
-              <h4>BREMER/MCCOY (DK)</h4>
-              <h4>AV AV AV (DK)</h4>
-              <h4>CANNES (FR)</h4>
-            </div>
-            
-          </div>
-       
-        <h5>More artists and info to come...</h5>
-      </div>
-      <div class="map">
-        <h2>Map</h2>
-        <img src="xhBalck-map.jpg" alt="">
-      </div>
-      <div class="ticket">
-        <h4>Ticket sale starts:<h4/>
-        <h3>09.04.2020 - 12:00</h3>
-      </div>
-      <div class="about">
-          <div class="line-about"></div>
-        <h2>About</h2>
-        <div class="text">
-            <p>xhBalck is a movement born in 2008 in Copenhagen with the focus on life, fun and freedom.</p>
-            <p>The festival has had its debut in 2010. Three years later the festival had to be shut down due financial reasons. Thanks to very kind sponsors and partnerships, we were able to resurrect and jump to a new era of xhBalck festival with a massively new budget.</p>    
-            <p>Expect this website and social media presence to be updated during the next weeks!</p>
-            <a href="https://instagram.com/xhbalck">Follow us on instagram</a>
+    <div class="lineup">
+      <h2>Acts</h2>
+      <div class="artists">
+        <h3>POST MALONE (US)</h3>
+        <div class="sub-art">
+          <h4>MØME (FR)</h4>
+          <h4>RAFN (DK)</h4>
+          <h4>YUNG LEAN (SE)</h4>
+          <h4>BREMER/MCCOY (DK)</h4>
+          <h4>AV AV AV (DK)</h4>
+          <h4>CANNES (FR)</h4>
         </div>
+
       </div>
+
+      <h5>More artists and info to come...</h5>
+    </div>
+    <div class="map">
+      <h2>Map</h2>
+      <img src="xhBalck-map.jpg" alt="">
+    </div>
+    <div class="ticket">
+      <h4>Ticket sale starts:
+        <h4 />
+        <h3>09.04.2020 - 12:00</h3>
+    </div>
+    <div class="about">
+      <div class="line-about"></div>
+      <h2>About</h2>
+      <div class="text">
+        <p>xhBalck is a movement born in 2008 in Copenhagen with the focus on life, fun and freedom.</p>
+        <p>The festival has had its debut in 2010. Three years later the festival had to be shut down due financial
+          reasons. Thanks to very kind sponsors and partnerships, we were able to resurrect and jump to a new era of
+          xhBalck festival with a massively new budget.</p>
+        <p>Expect this website and social media presence to be updated during the next weeks!</p>
+        <a href="https://instagram.com/xhbalck">Follow us on instagram</a>
+      </div>
+    </div>
     <footer>
-        <div class="line-footer-1"></div>
-        <div class="line-footer-2"></div>
-         <p>© xhBalck 2020. All rights reserved.</p>
+      <div class="line-footer-1"></div>
+      <div class="line-footer-2"></div>
+      <p>© xhBalck 2020. All rights reserved.</p>
     </footer>
 
-    </main>
-    <script>
-        const _0x254e=['bm93','aW5uZXJIVE1M','LnRpY2tldA==','cXVlcnlTZWxlY3Rvcg=='];(function(_0x2b5493,_0x254ea5){const _0x3cc703=function(_0x3b654a){while(--_0x3b654a){_0x2b5493['push'](_0x2b5493['shift']());}};_0x3cc703(++_0x254ea5);}(_0x254e,0x11a));const _0x3cc7=function(_0x2b5493,_0x254ea5){_0x2b5493=_0x2b5493-0x0;let _0x3cc703=_0x254e[_0x2b5493];if(_0x3cc7['Awqalp']===undefined){(function(){let _0x3c51ce;try{const _0x173645=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x3c51ce=_0x173645();}catch(_0x509315){_0x3c51ce=window;}const _0x45a0e7='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x3c51ce['atob']||(_0x3c51ce['atob']=function(_0x51ecd9){const _0xa0fc1f=String(_0x51ecd9)['replace'](/=+$/,'');let _0x3b9700='';for(let _0x1d105c=0x0,_0xf8b458,_0x30d8bc,_0x29768d=0x0;_0x30d8bc=_0xa0fc1f['charAt'](_0x29768d++);~_0x30d8bc&&(_0xf8b458=_0x1d105c%0x4?_0xf8b458*0x40+_0x30d8bc:_0x30d8bc,_0x1d105c++%0x4)?_0x3b9700+=String['fromCharCode'](0xff&_0xf8b458>>(-0x2*_0x1d105c&0x6)):0x0){_0x30d8bc=_0x45a0e7['indexOf'](_0x30d8bc);}return _0x3b9700;});}());_0x3cc7['zosCaf']=function(_0x1eaf80){const _0x17a6e3=atob(_0x1eaf80);let _0x159d96=[];for(let _0x1c1117=0x0,_0x2ee9ad=_0x17a6e3['length'];_0x1c1117<_0x2ee9ad;_0x1c1117++){_0x159d96+='%'+('00'+_0x17a6e3['charCodeAt'](_0x1c1117)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x159d96);};_0x3cc7['WEIrXI']={};_0x3cc7['Awqalp']=!![];}const _0x3b654a=_0x3cc7['WEIrXI'][_0x2b5493];if(_0x3b654a===undefined){_0x3cc703=_0x3cc7['zosCaf'](_0x3cc703);_0x3cc7['WEIrXI'][_0x2b5493]=_0x3cc703;}else{_0x3cc703=_0x3b654a;}return _0x3cc703;};let today=Date[_0x3cc7('0x2')]();if(today>0x1715e61cd00){document[_0x3cc7('0x1')](_0x3cc7('0x0'))[_0x3cc7('0x3')]='<h3>SOLD\x20OUT</h3>';}
-    </script>
-  </body>
+  </main>
+  <script>
+    const _0x254e = ['bm93', 'aW5uZXJIVE1M', 'LnRpY2tldA==', 'cXVlcnlTZWxlY3Rvcg==']; (function (_0x2b5493, _0x254ea5) { const _0x3cc703 = function (_0x3b654a) { while (--_0x3b654a) { _0x2b5493['push'](_0x2b5493['shift']()); } }; _0x3cc703(++_0x254ea5); }(_0x254e, 0x11a)); const _0x3cc7 = function (_0x2b5493, _0x254ea5) { _0x2b5493 = _0x2b5493 - 0x0; let _0x3cc703 = _0x254e[_0x2b5493]; if (_0x3cc7['Awqalp'] === undefined) { (function () { let _0x3c51ce; try { const _0x173645 = Function('return\x20(function()\x20' + '{}.constructor(\x22return\x20this\x22)(\x20)' + ');'); _0x3c51ce = _0x173645(); } catch (_0x509315) { _0x3c51ce = window; } const _0x45a0e7 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='; _0x3c51ce['atob'] || (_0x3c51ce['atob'] = function (_0x51ecd9) { const _0xa0fc1f = String(_0x51ecd9)['replace'](/=+$/, ''); let _0x3b9700 = ''; for (let _0x1d105c = 0x0, _0xf8b458, _0x30d8bc, _0x29768d = 0x0; _0x30d8bc = _0xa0fc1f['charAt'](_0x29768d++); ~_0x30d8bc && (_0xf8b458 = _0x1d105c % 0x4 ? _0xf8b458 * 0x40 + _0x30d8bc : _0x30d8bc, _0x1d105c++ % 0x4) ? _0x3b9700 += String['fromCharCode'](0xff & _0xf8b458 >> (-0x2 * _0x1d105c & 0x6)) : 0x0) { _0x30d8bc = _0x45a0e7['indexOf'](_0x30d8bc); } return _0x3b9700; }); }()); _0x3cc7['zosCaf'] = function (_0x1eaf80) { const _0x17a6e3 = atob(_0x1eaf80); let _0x159d96 = []; for (let _0x1c1117 = 0x0, _0x2ee9ad = _0x17a6e3['length']; _0x1c1117 < _0x2ee9ad; _0x1c1117++) { _0x159d96 += '%' + ('00' + _0x17a6e3['charCodeAt'](_0x1c1117)['toString'](0x10))['slice'](-0x2); } return decodeURIComponent(_0x159d96); }; _0x3cc7['WEIrXI'] = {}; _0x3cc7['Awqalp'] = !![]; } const _0x3b654a = _0x3cc7['WEIrXI'][_0x2b5493]; if (_0x3b654a === undefined) { _0x3cc703 = _0x3cc7['zosCaf'](_0x3cc703); _0x3cc7['WEIrXI'][_0x2b5493] = _0x3cc703; } else { _0x3cc703 = _0x3b654a; } return _0x3cc703; }; let today = Date[_0x3cc7('0x2')](); if (today > 0x1715e61cd00) { document[_0x3cc7('0x1')](_0x3cc7('0x0'))[_0x3cc7('0x3')] = '<h3>SOLD\x20OUT</h3>'; }
+  </script>
+</body>
+
 </html>
